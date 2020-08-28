@@ -48,6 +48,12 @@ document.getElementById("b").style.display = "none";
     }
   }
 
+  function startFunction(){
+    var paragraph= $("<p>");
+    paragraph.text("Score:"+ counter);
+    $(".header").append(paragraph);
+  }
+
   function counterUp(){
     counter++
     console.log(counter)
@@ -59,3 +65,25 @@ document.getElementById("b").style.display = "none";
         console.log(localStorage)
       }
   }
+
+function startFunction(){
+  var seconds = 0;
+  var interval ;
+  function timer(mins) {
+      seconds = mins*60 || 0;     
+      interval = setInterval(function() {
+
+      seconds--;
+      if(!seconds){
+       clearInterval(interval); 
+       alert("times up");
+      }
+      },1000)
+  }
+
+  var time = $("<p>");
+  time.text(interval);
+  $(".header").append(time);
+  
+}
+  
