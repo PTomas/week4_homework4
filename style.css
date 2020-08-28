@@ -1,0 +1,25 @@
+#a {
+    text-align: center;
+    position: relative;
+    top:250px;
+}
+
+
+
+#start-button{
+    position: relative;
+    left:750px;
+}
+
+#cancel-button{
+    position: relative;
+    left:595px;
+}
+
+#b {
+    text-align: center;
+    position: relative;
+    top: 100px;
+    direction: ltr;
+}
+

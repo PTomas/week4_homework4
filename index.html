@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script type="text/javascript" src="function.js"></script>
+
+</head>
+<body>
+    <header class="header"></header>
+    <section id="a">
+        <h1>Coding Quiz</h1>
+        <div class="row">
+            <button type="button" class="btn btn-primary" id="start-button" onclick="startFunction()">Start</button>
+            <button type="button" class="btn btn-light" id="cancel-button"onclick="cancelFunction()">Cancel</button>
+        </div>
+    </section>
+
+    <section id="b">
+        <h3>What is the most widly used programming language?</h3>
+        <div class="btn-group-vertical" role="toolbar" aria-label="Toolbar with button groups">
+            <div class="btn-group-vertical" role="group" aria-label="First group" id="Q1">
+              <button type="button" class="btn btn-secondary" onclick="counterUp()">1 javascript</button>
+              <button type="button" class="btn btn-secondary" onclick="counterDown()">2 css</button>
+              <button type="button" class="btn btn-secondary"onclick="counterDown()">3 html</button>
+              <button type="button" class="btn btn-secondary"onclick="counterDown()">4 python</button>
+                </br>
+            </div>
+        <button type="button" class="btn btn-primary" id="next1-button" onclick="next1()">Next</button>
+
+    </section>
+
+<script>
+    function startFunction(){
+        var paragraph= $("<p>");
+        paragraph.text("Score:"+ counter);
+        $(".header").append(paragraph);
+        paragraph.text("color");
+    }
+
+</script>
+
+</body>
+</html>
