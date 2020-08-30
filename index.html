@@ -9,8 +9,14 @@
 
 </head>
 <body>
-    <header class="header"></header>
-    <section id="a">
+    <header class="header">
+        <p id="countdown">20:00</p>
+    </header>
+    <section class="body">
+
+    </section>
+
+    <section id="questionA">
         <h1>Coding Quiz</h1>
         <div class="row">
             <button type="button" class="btn btn-primary" id="start-button" onclick="startFunction()">Start</button>
@@ -18,33 +24,121 @@
         </div>
     </section>
 
-    <section id="b">
+    <section id="questionB">
         <h3>What is the most widly used programming language?</h3>
-        <div class="btn-group-vertical" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group-vertical" role="group" aria-label="First group" id="Q1">
-              <button type="button" class="btn btn-secondary" onclick="counterUp()">1 javascript</button>
-              <button type="button" class="btn btn-secondary" onclick="counterDown()">2 css</button>
-              <button type="button" class="btn btn-secondary"onclick="counterDown()">3 html</button>
-              <button type="button" class="btn btn-secondary"onclick="counterDown()">4 python</button>
-                </br>
-            </div>
-        <button type="button" class="btn btn-primary" id="next1-button" onclick="next1()">Next</button>
+        <div class="form-check">
+            <input id="1correct" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              javascript
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              css
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+            <label class="form-check-label" for="exampleRadios3">
+              HTML
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+            <label class="form-check-label" for="exampleRadios4">
+              jquery
+            </label>
+          </div>
+        <button type="button" class="btn btn-primary" id="next2-button" onclick="next2()">Next</button>
 
     </section>
 
-    <section id="c">
-        <h3>What is the most widly used programming language?</h3>
-        <div class="btn-group-vertical" role="toolbar" aria-label="Toolbar with button groups">
-            <div class="btn-group-vertical" role="group" aria-label="First group" id="Q1">
-              <button type="button" class="btn btn-secondary" onclick="counterUp()">1 javascript</button>
-              <button type="button" class="btn btn-secondary" onclick="counterDown()">2 css</button>
-              <button type="button" class="btn btn-secondary"onclick="counterDown()">3 html</button>
-              <button type="button" class="btn btn-secondary"onclick="counterDown()">4 python</button>
-                </br>
-            </div>
-        <button type="button" class="btn btn-primary" id="next1-button" onclick="next1()">Next</button>
-
+    <section id="questionC">
+        <h3>WHat Is the difference between classes and ids?</h3>
+        <div class="form-check">
+            <input id="1correct" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              javascript
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              css
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+            <label class="form-check-label" for="exampleRadios3">
+              Classes can be used many timed ids can only be used once.
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+            <label class="form-check-label" for="exampleRadios4">
+              jquery
+            </label>
+          </div>
+        <button type="button" class="btn btn-primary" id="next3-button" onclick="next3()">Next</button>
     </section>
+    <section id="questionD">
+        <h3>Which is an attribute of img?</h3>
+        <div class="form-check">
+            <input id="1correct" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              color
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              text
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+            <label class="form-check-label" for="exampleRadios3">
+              src
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+            <label class="form-check-label" for="exampleRadios4">
+              hrc
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary" id="next4-button" onclick="next4()">Next</button>
+    </section>
+    <section id="questionE">
+        <h3>What is correct wordage for calling an element by id according to the paradigm?</h3>
+        <div class="form-check">
+            <input id="1correct" class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              idNow
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+            <label class="form-check-label" for="exampleRadios2">
+              myElementId
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option2">
+            <label class="form-check-label" for="exampleRadios3">
+              functionElement
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios4" value="option2">
+            <label class="form-check-label" for="exampleRadios4">
+                getElementId
+            </label>
+          </div>
+          <button type="button" class="btn btn-primary" id="next4-button" onclick="next4()">Next</button>
+    </section>
+    
 
     <script type="text/javascript" src="function.js"></script>
     <script src="https://code.jquery.com/jquery.js"></script>

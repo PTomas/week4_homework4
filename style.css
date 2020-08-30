@@ -1,3 +1,7 @@
+#countdown{
+    direction: rtl;
+}
+
 #a {
     text-align: center;
     position: relative;
@@ -16,7 +20,7 @@
     left:595px;
 }
 
-#b {
+#b, #c, #d, #e {
     text-align: center;
     position: relative;
     top: 100px;
